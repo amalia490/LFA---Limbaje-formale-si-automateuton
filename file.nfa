@@ -1,0 +1,31 @@
+Lista_Simboluri:
+    0
+    1
+End
+
+Lista_Stari:
+    s0 
+    s1
+    s2 
+    s3
+    s4
+End
+
+Stare_start:
+    s0
+End
+
+Stari_finale:
+    s4
+End
+
+# δ ->  stare - symbol - starea_urmatoare
+Lista_Tranzitii:
+    (s0, e) - s1
+    (s0, e) - s2
+    (s1, 0) - s1
+    (s1, 1) - s3
+    (s2, 1) - s2
+    (s2, 0) - s3
+    (s3, e) - s4
+End
