@@ -3,9 +3,7 @@ Acest repository conține implementări ale principalelor modele teoretice din t
 Fiecare program include un exemplu de fișier .txt din care se citește configurația specifică (alfabet, stări, tranziții, etc.), pentru a demonstra funcționarea modelului.
 Mai jos se găsesc structurile fișierelor .txt, pentru ca utilizatorul să știe cum să scrie corect datele de intrare în fișierul de citire pentru fiecare model:
 
--------------------------------
-DFA / NFA
--------------------------------
+# DFA / NFA
 
 Lista_Simboluri:
     symbol1
@@ -37,7 +35,7 @@ Stari_finale:
     ...
     stareF
 
-# δ ->  stareM - symbolN - stareL
+#δ ->  stareM - symbolN - stareL
 Lista Tranzitii:
     (stare1, symbol2) - stare5
     (stare3, symbol4) - stare6
@@ -47,9 +45,8 @@ Lista Tranzitii:
     (stareM, symbolN) - stareL
 End
 
-------------------------------
-PDA
-------------------------------
+
+# PDA
 
 Lista Simboluri:
     symbol0
@@ -90,7 +87,7 @@ Stari_acceptate
     ...
     ...
 
-# δ ->  (stare - input_symbol - stack_top) - (urmatoarea_stare, stack_push)
+#δ ->  (stare - input_symbol - stack_top) - (urmatoarea_stare, stack_push)
 Lista Tranzitii:
     (stare0, symbol, stackZ) - (stare1, stackAZ)
     ...
@@ -98,9 +95,7 @@ Lista Tranzitii:
     ...
 End
 
---------------------------------------
-TM
---------------------------------------
+# TM
 
 Symbols:
     simbol1
@@ -121,7 +116,7 @@ States:
     stareF
 End
 
-# δ ->  (stare_curenta, simbol_citit) - (stare_urmatoare, simbol_scris, directie)
+#δ ->  (stare_curenta, simbol_citit) - (stare_urmatoare, simbol_scris, directie)
 Transitions:
     (stare1, simbol1) - (stare2, simbol2, R)
     (stare2, simbol2) - (stare3, simbol3, L)
